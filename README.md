@@ -18,7 +18,7 @@ A basic image caption project based on [torch](https://github.com/torch/torch7),
 
 # Running
  1. After you download pretained models, put them in the folder `model` in `video_cap` subdirectory.
- 2. Get into root directory of this repository, run commands below:
+ 2. Get into root directory of this repository, run commands below:  
  ```shell
 	cd ./video_cap/
 	python manage.py runserver 0.0.0.0:8000
