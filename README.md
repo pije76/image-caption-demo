@@ -2,7 +2,7 @@
 [![MIT License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
 [![Torch7](https://img.shields.io/badge/torch-7-orange.svg)](http://torch.ch/)
 [![neuraltalk2](https://img.shields.io/badge/neuraltalk-2-blue.svg)](https://github.com/karpathy/neuraltalk2)
-[![Django1.9](https://img.shields.io/badge/Django-1.9-yellowgreen.svg)](https://github.com/django/django)
+[![Django1.9](https://img.shields.io/badge/Django-1.9-yellowgreen.svg)](https://github.com/django/django)  
 A basic image caption project based on [torch](https://github.com/torch/torch7), [neuraltalk2](https://github.com/karpathy/neuraltalk2)  and [django](https://github.com/django/django).  
 
 # Requirement
