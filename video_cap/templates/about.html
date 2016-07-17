@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+		{% load staticfiles %}
+		{% block title %}
+		  About
+		{% endblock %}
+{% block main %}
+  <div class="container jumbotron">
+      <p>About us:</p>  
+       <table>
+       <tr>
+       <td>
+		<div >
+        <h4>Junfu Pu</h4>  
+        <img style="width: 80%;height: 80%;" src="{%static "imgs/pjh.png" %}">
+        <ul>
+			<li>email:pjh@mail.ustc.edu.cn</li>
+        	<li>site:<a href="http://home.ustc.edu.cn/~pjh">http://home.ustc.edu.cn/~pjh</a></li>
+        	<li>github:<a href="https://github.com/Jevin754">https://github.com/Jevin754</a></li>
+		</ul>
+      </div> 
+      </td>
+      <td>
+      <div >
+        <h4>Qing Li</h4>  
+        <img style="width: 80%;height: 80%;" src="{% static "imgs/liqing.jpg"%}">
+        <ul>
+			<li>email:sealq@mail.ustc.edu.cn</li>
+        	<li>site:<a href="http://liqing-ustc.github.io">liqing-ustc.github.io</a></li>
+        	<li>github:<a href="https://github.com/liqing-ustc">https://github.com/liqing-ustc</a>        
+        </ul>
+      </div> 
+      </td>
+      <td>
+      <div >
+        <h4>Yiding Liu</h4>  
+        <img style="width: 80%;height: 60%;" src="{%static "imgs/lyd.jpg" %}">
+        <ul>
+			<li>email:liuyd123@mail.ustc.edu.cn</li>
+        	<li>site:</li>
+        	<li>github:<a href="https://github.com/xck36">https://github.com/xck36</a></li>
+        </ul>
+      </div> 
+      </td>
+      <td>
+      <div >
+        <h4>Yunfeng Wang</h4>  
+        <img style="width: 70%;height: 70%;" src="{%static "imgs/wyf.jpg" %}">
+        <ul>
+			<li>email:wangyf11@mail.ustc.edu.cn</li>
+        	<li>site:<a href="http://home.ustc.edu.cn/~wangyf11">http://home.ustc.edu.cn/~wangyf11</a></li>
+        	<li>github:<a href="https://github.com/vra">https://github.com/vra</a></li>
+        </ul>
+      </div>
+      </td>
+      </tr>
+      </table>
+  </div>
+
+{% endblock %}

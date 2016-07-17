@@ -1,2 +1,32 @@
 # image-caption-demo
-A basic image caption project based on torch, neuraltalk2  and django
+[![MIT License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)  
+A basic image caption project based on [torch](https://github.com/torch/torch7), [neuraltalk2](https://github.com/karpathy/neuraltalk2)  and [django](https://github.com/django/django).  
+
+# Requirement
+ 1. torch7
+	installing tutorial: <http://torch.ch/docs/getting-started.html#_>
+ 2. neuraltalk2
+	installing tutorial: <https://github.com/karpathy/neuraltalk2>
+ 3. Django
+	install using `pip`: `sudo pip install Django`
+ 4. Pretrained models
+	Read tutorial in neuraltalk2 to get the pretrained models.
+
+
+# Run
+ Get into root directory of this repository, run commands below:
+ ```shell
+	cd ./video_cap/
+	python manage.py runserver 0.0.0.0:8000
+ ``` 
+ Then you will see the website running on the Internet!
+
+
+#Author
+ Qing Li([liqing-ustc](https://github.com/liqing-ustc))
+ Yiding Liu([xck36](https://github.com/xck36))
+ Junfu Pu([Jevin754](https://github.com/Jevin754))
+ Yunfeng Wang([vra](https://github.com/vra))
+
+#License
+ MIT

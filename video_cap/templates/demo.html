@@ -1,0 +1,19 @@
+{% extends 'demo_base.html'%}
+
+{% block result %}
+    {% load staticfiles %}
+        <p>
+           {% if sentences %} 
+                <img class="result" src= "{% static "imgs/liqing/images/tmp.jpg"%}">
+                <p class="result">
+                    The image caption result:
+                </p>
+                {% for sentence in sentences %}
+                    <p class="result">
+                        {{ sentence}}
+                    </p>
+                {% endfor %}
+            {% endif %}
+          </p>
+
+{% endblock %}
