@@ -31,7 +31,8 @@
 
             reader.onload = function (e) {
                 var submit = document.getElementById("submit");
-                submit.removeAttribute('disabled');
+//                submit.removeAttribute('disabled');
+			  	submit.value=  "Actually can't  run because of lack of GPU and model";
 
                 var paras = document.getElementsByClassName('result');
 
