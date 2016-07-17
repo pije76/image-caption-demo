@@ -13,7 +13,7 @@ A basic image caption project based on [torch](https://github.com/torch/torch7),
 	Read tutorial in neuraltalk2 to get the pretrained models.
 
 
-# Run
+# Running
  Get into root directory of this repository, run commands below:
  ```shell
 	cd ./video_cap/
@@ -23,10 +23,10 @@ A basic image caption project based on [torch](https://github.com/torch/torch7),
 
 
 #Author
- Qing Li([liqing-ustc](https://github.com/liqing-ustc))
- Yiding Liu([xck36](https://github.com/xck36))
- Junfu Pu([Jevin754](https://github.com/Jevin754))
- Yunfeng Wang([vra](https://github.com/vra))
+ Yunfeng Wang([vra](https://github.com/vra))  
+ Qing Li([liqing-ustc](https://github.com/liqing-ustc))  
+ Yiding Liu([xck36](https://github.com/xck36))  
+ Junfu Pu([Jevin754](https://github.com/Jevin754))  
 
 #License
  MIT
