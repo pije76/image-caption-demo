@@ -19,14 +19,14 @@ A basic image caption project based on [torch](https://github.com/torch/torch7),
 # Running
  1. After you download pretained models, put them in the folder `model` in `video_cap` subdirectory.
  2. Get into root directory of this repository, run commands below:  
- ```shell
+```shell
 	cd ./video_cap/
 	python manage.py runserver 0.0.0.0:8000
- ``` 
+``` 
  Then you will see the website running on the Internet!
 
 
-#Author
+#Authors
  Yunfeng Wang([vra](https://github.com/vra))  
  Qing Li([liqing-ustc](https://github.com/liqing-ustc))  
  Yiding Liu([xck36](https://github.com/xck36))  
