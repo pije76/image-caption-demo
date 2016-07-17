@@ -6,18 +6,19 @@
 A basic image caption project based on [torch](https://github.com/torch/torch7), [neuraltalk2](https://github.com/karpathy/neuraltalk2)  and [django](https://github.com/django/django).  
 
 # Requirement
- 1. torch7
+ 1. torch7  
 	installing tutorial: <http://torch.ch/docs/getting-started.html#_>
- 2. neuraltalk2
+ 2. neuraltalk2  
 	installing tutorial: <https://github.com/karpathy/neuraltalk2>
- 3. Django
+ 3. Django  
 	install using `pip`: `sudo pip install Django`
- 4. Pretrained models
+ 4. Pretrained models 
 	Read tutorial in neuraltalk2 to get the pretrained models.
 
 
 # Running
- Get into root directory of this repository, run commands below:
+ 1. After you download pretained models, put them in the folder `model` in `video_cap` subdirectory.
+ 2. Get into root directory of this repository, run commands below:
  ```shell
 	cd ./video_cap/
 	python manage.py runserver 0.0.0.0:8000
