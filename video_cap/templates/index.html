@@ -1,19 +1,144 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 {% block title %}
-	Home	
+	Homepage of Image Caption Project 	
 {% endblock %}
 
 {% block main %}
 	<div class="container jumbotron">
-		<p>
+		<h2>
 			Welcome to our project page!
-		</p>
-		<p>
+		</h2>
+		<h3>
 			Introduction	
+		</h3>
+		<p>
+		Image Caption, i.e. automatically describing the content of an image using properly formed English sentences, is a very challenging task, but it could have great impact, for instance by helping visually impaired people better understand the content of images on the web. This task is significantly harder, for example, than the well-studied image classification or object recognition tasks, which have been a main focus in the computer vision community. Indeed, a description must capture not only the objects contained in an image, but it also must express how these objects relate to each other as well as their attributes and the activities they are involved in. Moreover, the above semantic knowledge has to be expressed in a natural language like English, which means that a language model is needed in addition to visual understanding. 
 		</p>
-		<div>
-			Image show off
+		<h3>
+			Image Caption Examples	
+		</h3>
+		
+		<div id="wrap">
+		<div id="wrap">
+		<div id="blob">
+		<div class="idiv">
+			<div class="svgdiv">
+				<img  height="300" width="400" src = "{% static "imgs/examples/1.jpg" %}">
+			</div>
+			<div class="rnnannot annot" style="width:300px;">
+				<div class="atxt">a man riding skis down a snow covered slope</div>
+			</div>
 		</div>
+
+		<div class="idiv">
+			<div class="svgdiv">
+				<img  height="300" width="400" src = "{% static "imgs/examples/2.jpg" %}">
+			</div>
+			<div class="rnnannot annot" style="width:300px;">
+			<div class="atxt">a cell phone is shown with a battery on it</div>
+			</div>
+		</div>
+
+		<div class="idiv">
+			<div class="svgdiv">
+				<img  height="300" width="400" src = "{% static "imgs/examples/3.jpg" %}">
+			</div>
+			<div class="rnnannot annot" style="width:300px;">
+			<div class="atxt">a man is holding a tennis racket on a tennis court</div>
+			</div>
+		</div>
+	
+		<div class="idiv">
+			<div class="svgdiv">
+				<img  height="300" width="400" src = "{% static "imgs/examples/4.jpg" %}">
+			</div>
+			<div class="rnnannot annot" style="width:300px;">
+				<div class="atxt">a zebra standing in a field of grass</div>
+			</div>
+		</div>
+
+		<div class="idiv">
+			<div class="svgdiv">
+				<img  height="300" width="400" src = "{% static "imgs/examples/5.jpg" %}">
+			</div>
+			<div class="rnnannot annot" style="width:300px;">
+				<div class="atxt">a man is playing tennis on a tennis court</div>
+			</div>
+		</div>
+
+		<div class="idiv">
+			<div class="svgdiv">
+				<img  height="300" width="400" src = "{% static "imgs/examples/6.jpg" %}">
+			</div>
+			<div class="rnnannot annot" style="width:300px;">
+				<div class="atxt">a young boy is playing frisbee in the park</div>
+			</div>
+		</div>
+
+		<div class="idiv">
+			<div class="svgdiv">
+				<img  height="300" width="400" src = "{% static "imgs/examples/7.jpg" %}">
+			</div>
+			<div class="rnnannot annot" style="width:300px;">
+				<div class="atxt">a plate of food with a sandwich and a salad</div>
+			</div>
+		</div>
+
+		<div class="idiv">
+			<div class="svgdiv">
+				<img  height="300" width="400" src = "{% static "imgs/examples/8.jpg" %}">
+			</div>
+			<div class="rnnannot annot" style="width:300px;">
+				<div class="atxt">a train traveling down tracks next to a forest</div>
+			</div>
+		</div>
+
+
+		<div class="idiv">
+			<div class="svgdiv">
+				<img  height="300" width="400" src = "{% static "imgs/examples/9.jpg" %}">
+			</div>
+			<div class="rnnannot annot" style="width:300px;">
+				<div class="atxt">a group of boats docked in a harbor</div>
+			</div>
+		</div>
+
+
+
+		<div class="idiv">
+			<div class="svgdiv">
+				<img  height="300" width="400" src = "{% static "imgs/examples/10.jpg" %}">
+			</div>
+			<div class="rnnannot annot" style="width:300px;">
+				<div class="atxt">a cow standing in a field with a tree in the background</div>
+			</div>
+		</div>
+
+
+		<div class="idiv">
+			<div class="svgdiv">
+				<img  height="300" width="400" src = "{% static "imgs/examples/11.jpg" %}">
+			</div>
+			<div class="rnnannot annot" style="width:300px;">
+				<div class="atxt">a group of people standing around a table with a cake</div>
+			</div>
+		</div>
+
+
+		<div class="idiv">
+			<div class="svgdiv">
+				<img  height="300" width="400" src = "{% static "imgs/examples/12.jpg" %}">
+			</div>
+			<div class="rnnannot annot" style="width:300px;">
+				<div class="atxt">a man riding a horse drawn carriage down a street</div>
+			</div>
+		</div>
+
+		</div>
+		</div>
+		</div>
+
 	</div>
 {% endblock %}
 

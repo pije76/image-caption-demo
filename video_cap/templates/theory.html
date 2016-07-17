@@ -1,13 +1,81 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
     
 {% block title %}
   Theory
 {% endblock %}
 
 {% block main %}
-   <div class="container jumbotron">
+   <div class="container">
+	<div>
+		<h1>
+			1. A general pipeline of image caption
+		<h1>
+		<img style="width:80%;" align="middle" src = "{% static "imgs/theory/1.png" %}"> 
       <p>
-        We used algorithm prosposed in this paper:
       </p>
+	</div>
+	<br>	
+	<br>	
+	<br>	
+
+	<div>
+		<h1>
+			2. Algorithm
+		<h1>
+		<ul>
+		
+		<li><p>Input: a raw natural image</p></li>
+		<li><p>Output: a English sentence (describe the content of image)</p></li>
+		<li><p>Model: ‘encoder-decoder’ framework + attention mechanism</p></li>
+		</ul>
+		<p>Our model is an end-to-end ‘encoder-decoder’ framework, and we also add two kinds of different attention mechanism to the framework.</p>
+
+		<ol>
+		<li>
+			<p>‘encoder-decoder’ framework</p>
+			<p>We adopt the encoder-decoder framework proposed by [2], which is inspired by the recent advance in machine translation.</p>
+		<img style="width:80%;" align="middle" src = "{% static "imgs/theory/2.png" %}"> 
+		</li>
+		<ul>
+		<li>
+			<p>encoder: VGG19 (pretrained on ImageNet), encode the raw image to a fixed-length feature vector</p>
+		</li>
+		<li>
+			<p>decoder: LSTM, generate a sentence from the feature vector, like a language model</p>
+		<img style="width:80%;" align="middle" src = "{% static "imgs/theory/3.png" %}"> 
+		</li>
+		</ul>
+		<li>
+		<p>
+			Attention mechanism
+		</p>
+		<p>
+			‘Attention’ means when we generate the different parts of the sentence, we should attend to different parts of the content of the image. Because image caption deals with two different media (vision and language), we consider two kinds of different attention mechanism, ‘spatial attention’ [3] and ‘semantic attention’ [4]
+		</p>
+
+		<ul>
+			<li>
+				<p>Spatial attention</p>
+				<p>Spatial attention is attention in term of images, i.e., when we generate different words of the sentence, we should attend to different region of the original image. We also use CNN to encode different regions of image.</p>
+				<img style="width:80%;" align="middle" src = "{% static "imgs/theory/4.png" %}"> 
+				<img style="width:80%;" align="middle" src = "{% static "imgs/theory/5.png" %}"> 
+			</li>
+			<li>
+				<p>Semantic attention</p>
+				<p>Semantic attention is attention in terms of language. Compared with spatial attention, semantic attention means when we generate different parts of the sentence, we attend to different semantic attributes (object, color, action…). The semantic attributes are extracted from image beforehand.</p>
+				<img style="width:80%;" align="middle" src = "{% static "imgs/theory/6.png" %}"> 
+				<img style="width:80%;"  align="middle" src = "{% static "imgs/theory/7.png" %}"> 
+			
+			</li>
+		</ul>
+		</li>
+		</ol>
+	<h1>Reference</h1>
+      <p>[1]	H. Fang, S. Gupta, F. Iandola, R. Srivastava, L. Deng, P. Dollár, J. Gao, X. He, M. Mitchell, J. C. Platt, C. L. Zitnick, and G. Zweig, “From Captions to Visual Concepts and Back,” arXiv, Nov. 2014.</p>
+      <p>[2]	O. Vinyals, A. Toshev, S. Bengio, and D. Erhan, “Show and tell: A neural image caption generator,” Cvpr, 2015.</p>
+      <p>[3]	K. Xu, J. Ba, and R. Kiros, “Show, attend and tell: Neural image caption generation with visual attention,” ICML, 2015.</p>
+      <p>[4]	Q. You, H. Jin, Z. Wang, C. Fang, and J. Luo, “Image Captioning with Semantic Attention,” Cvpr, p. 10, Mar. 2016.</p>
+	</div>
   </div>
 {% endblock %}
