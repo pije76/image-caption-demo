@@ -26,11 +26,11 @@ A basic image caption project based on [torch](https://github.com/torch/torch7),
  Then you will see the website running on the Internet!
 
 
-#Authors
+# Authors
  Yunfeng Wang([vra](https://github.com/vra))  
  Qing Li([liqing-ustc](https://github.com/liqing-ustc))  
  Yiding Liu([xck36](https://github.com/xck36))  
  Junfu Pu([Jevin754](https://github.com/Jevin754))  
 
-#License
+# License
  MIT
